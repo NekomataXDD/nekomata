@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style type="text/css">
+body{background-color: #fafafa}
+h2{text-align: center;color: #D7D7D7}
+.box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.count{
+	width: 200px;
+	height: 200px;
+	background-color: #0093FF;
+	color: #FFFFFF;
+	font-size: 36px;
+	line-height: 200px;
+	text-align: center;
+	border-radius: 50%;
+	font-family: "Arial Black";
+}
+</style>
+</head>
+<body>
+
+   <h2>基于jQuery实现的数字滚动插件</h2>
+   
+    <div class="box">
+        <div class="count"></div>
+    </div>
+   <ul>
+       <li>list item 1</li>
+       <li>list item 2
+           <ul>
+               <li>list item 2-a</li>
+               <li>list item 2-b</li>
+           </ul>
+       </li>
+       <li>list item 3</li>
+       <li>list item 4</li>
+   </ul>
+
+	
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/count.js"></script>
+   <script>
+       for(a=1;a<=9;a++){
+           for(b=1;b<=a;b++){
+               document.write(a+'x'+b+'='+(a*b)+'&nbsp&nbsp');
+               if(a==b){
+                   document.write("<br>")
+               }
+           }
+       }
+   </script>
+<script type="text/javascript">
+$(function(){
+	$(".count").numberRock({
+		lastNumber:998545,
+		duration:2000,
+		easing:'swing',  //慢快慢
+	});
+});
+$('li').has('ul').css('background-color', 'red');
+</script>
+
+</body>
+</html>

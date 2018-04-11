@@ -1,0 +1,14 @@
+/*如果描述超过200像素，则会隐藏，添加省略号*/
+.ellipsis{
+     width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+.ellipsis-3{
+    width: 200px;
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+    overflow:hidden;
+}

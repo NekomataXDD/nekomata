@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var cars = new Array(); //数组1
+    cars[0]="Saab";
+    cars[1]="Volvo";
+    cars[2]="Volvo";
+    var cars = new Array("Saab","Volvo","Volvo");//数组2
+    var cars = ["Saab","Volvo","BMW"];//数组3
+
+    var person={            //对象
+        firstname:"neko",
+        lastname:"mata",
+        age:24,
+    };
+    document.write(person.firstname);   //寻址方式：1
+    document.write(person[1]); //寻址方式：2
+</script>
+</body>
+</html>

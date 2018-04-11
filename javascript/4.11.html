@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script></script>
+</head>
+<body>
+<p id="demo1">显示日期</p>
+<input onclick="one()" type="button" value="显示日期">
+<button type="button" onclick="two()">点击改变颜色</button>
+<p id="demo2">132</p>
+<p id="demo3">132</p>
+<button type="button" onclick="there()">点击</button>
+<script>
+    function one() {
+        document.getElementById("demo1").innerHTML=Date();
+    }
+    document.write("dasd");
+    function two() {
+        document.getElementById("demo1").style.color="red"
+    }
+    function there() {
+        document.getElementById("demo2").innerHTML="<h1>innerHTML</h1>"
+        document.getElementById("demo3").innerText="<h1>innerText</h1>"
+    }
+</script>
+</body>
+</html>
